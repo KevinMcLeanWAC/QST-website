@@ -14,6 +14,27 @@ export default function ResearchPage() {
           </h2>
 
           <div className="space-y-6">
+            {/* William De Vena Thesis */}
+            <div className="bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition">
+              <div className="flex items-center space-x-4">
+                <GraduationCap className="w-8 h-8 text-yellow-400" />
+                <div>
+                  <h3 className="text-lg font-semibold leading-snug">
+                    Reinforcement Learning for Market Making
+                  </h3>
+                  <p className="text-gray-400 text-sm">UCL MSc Thesis, Willam De Vena</p>
+                </div>
+              </div>
+              <a
+                href="/docs/Reinforcement%20learning%20for%20market%20making%20in%20algorithmic%20sports%20trading%20MSc%20Thesis%20Willam%20De%20Vena.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-md text-sm"
+              >
+                Download PDF
+              </a>
+            </div>
+
             {/* Charaka Abeywickrama Thesis */}
             <div className="bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition">
               <div className="flex items-center space-x-4">
@@ -111,6 +132,7 @@ export default function ResearchPage() {
     </div>
   );
 }
+
 
 
 
