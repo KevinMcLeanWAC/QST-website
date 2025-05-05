@@ -32,20 +32,21 @@ export default function ResearchPage() {
             <FileBarChart2 className="w-8 h-8 text-green-400" />
             <div>
               <h2 className="text-xl font-semibold">QST Company Presentation</h2>
-              <p className="text-gray-400 text-sm">PowerPoint file</p>
+              <p className="text-gray-400 text-sm">PDF presentation</p>
             </div>
           </div>
           <a
-            href="/docs/qst-company-presentation.pptx"
+            href="/docs/qst-company-presentation.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md"
           >
-            Download PPTX
+            Download PDF
           </a>
         </div>
       </div>
     </div>
   );
 }
+
 
