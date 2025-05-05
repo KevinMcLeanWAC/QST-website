@@ -14,28 +14,7 @@ export default function ResearchPage() {
           </h2>
 
           <div className="space-y-6">
-            {/* Thesis 1 */}
-            <div className="bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition">
-              <div className="flex items-center space-x-4">
-                <GraduationCap className="w-8 h-8 text-yellow-400" />
-                <div>
-                  <h3 className="text-lg font-semibold leading-snug">
-                    Predictive Models for Sports Market Pricing
-                  </h3>
-                  <p className="text-gray-400 text-sm">UCL MSc Thesis, 2024</p>
-                </div>
-              </div>
-              <a
-                href="/docs/ucl-thesis-sports-pricing.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-md text-sm"
-              >
-                Download PDF
-              </a>
-            </div>
-
-            {/* Thesis 2 */}
+            {/* Matyas Huba Thesis */}
             <div className="bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition">
               <div className="flex items-center space-x-4">
                 <GraduationCap className="w-8 h-8 text-yellow-400" />
@@ -43,11 +22,11 @@ export default function ResearchPage() {
                   <h3 className="text-lg font-semibold leading-snug">
                     Algorithmic Sports Arbitrage Using Statistical ML
                   </h3>
-                  <p className="text-gray-400 text-sm">UCL BSc Thesis, Matyas Huber</p>
+                  <p className="text-gray-400 text-sm">UCL BSc Thesis, Matyas Huba</p>
                 </div>
               </div>
               <a
-                href="/docs/Algorithmic-Sports-Arbitrage-Matyas-Huber.pdf"
+                href="/docs/Algorithmic%20Sports%20Arbitrage%20Using%20Statistical%20Machine%20Learning%20BSc%20Thesis%20Matyas%20Huba.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-4 bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-md text-sm"
@@ -56,7 +35,7 @@ export default function ResearchPage() {
               </a>
             </div>
 
-            {/* Thesis 3 */}
+            {/* Ben Schlagman Thesis */}
             <div className="bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition">
               <div className="flex items-center space-x-4">
                 <GraduationCap className="w-8 h-8 text-yellow-400" />
@@ -68,7 +47,7 @@ export default function ResearchPage() {
                 </div>
               </div>
               <a
-                href="/docs/Deep-Learning-for-Algorithmic-Sports-Betting-MSc-Thesis-Ben-Schlagman.pdf"
+                href="/docs/Deep%20Learning%20for%20Algorithmic%20Sports%20Betting%20MSc%20Thesis%20Ben%20Schlagman.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-4 bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-md text-sm"
@@ -111,5 +90,6 @@ export default function ResearchPage() {
     </div>
   );
 }
+
 
 
