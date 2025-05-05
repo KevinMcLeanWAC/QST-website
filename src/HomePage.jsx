@@ -1,52 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 
 export default function HomePage() {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: 'easeOut' }}
-      className="py-24 px-6 text-center bg-gradient-to-b from-gray-900 to-black text-white"
-    >
-      <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.6 }}
-        className="text-5xl md:text-6xl font-bold mb-6"
-      >
-        Systematic Alpha in Sports Markets
-      </motion.h1>
-
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.4, duration: 0.6 }}
-        className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
-      >
-        Institutional-grade algorithmic trading built for performance in global sports betting markets.
-      </motion.p>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.6, duration: 0.6 }}
-        className="flex flex-col sm:flex-row justify-center gap-4"
-      >
+    <section className="py-20 px-6 text-center bg-gradient-to-br from-gray-800 to-black">
+      <h1 className="text-3xl font-bold mb-4">Systematic Alpha in Sports Markets</h1>
+      <p className="text-xl mb-6">
+        The application of institutional-grade algorithmic trading to global sports betting markets.
+      </p>
+      <div className="flex justify-center gap-4 flex-wrap mt-20">
         <Link
           to="/contact"
-          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200"
+          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-2xl shadow-lg transition duration-200"
         >
           Contact Us
         </Link>
         <Link
           to="/repository"
-          className="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200"
+          className="bg-gray-700 hover:bg-gray-800 text-white px-6 py-3 rounded-2xl shadow-lg transition duration-200"
         >
           Investor Info
         </Link>
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 }
+
+
+
