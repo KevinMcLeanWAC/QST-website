@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 
 const Layout = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white font-sans">
+    <div className="min-h-screen flex flex-col bg-gray-900 text-white font-sans">
       <header className="bg-black py-4 px-6 flex items-center justify-between shadow-md">
         <Link to="/" className="flex items-center space-x-3">
           <img
@@ -23,7 +23,7 @@ const Layout = () => {
         </nav>
       </header>
 
-      <main className="p-6">
+      <main className="flex-grow p-6">
         <Outlet />
       </main>
 
@@ -48,4 +48,5 @@ const Layout = () => {
 };
 
 export default Layout;
+
 
