@@ -1,34 +1,51 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { FileText, Download } from 'lucide-react';
+import { FileText, FileBarChart2 } from 'lucide-react';
 
 export default function ResearchPage() {
   return (
-    <motion.div
-      className="p-6 max-w-4xl mx-auto text-white"
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <h2 className="text-3xl font-bold mb-6">Research</h2>
-
-      <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-xl shadow hover:bg-gray-700 transition">
-        <FileText className="w-8 h-8 text-blue-400 mt-1" />
-        <div className="flex-grow">
-          <h3 className="text-xl font-semibold">Algorithmic Trading of Sports Exchanges</h3>
-          <p className="text-gray-400 text-sm mb-2">
-            A technical white paper on applying financial algorithmic trading principles to in-play sports betting markets.
-          </p>
+    <div className="min-h-screen bg-gray-900 text-white px-6 py-16">
+      <h1 className="text-3xl font-bold mb-8 text-center">Research & Presentations</h1>
+      
+      <div className="max-w-2xl mx-auto space-y-6">
+        {/* Research Paper */}
+        <div className="bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <div className="flex items-center space-x-4">
+            <FileText className="w-8 h-8 text-blue-400" />
+            <div>
+              <h2 className="text-xl font-semibold">Algo-Trading of Sports Exchanges</h2>
+              <p className="text-gray-400 text-sm">PDF research paper</p>
+            </div>
+          </div>
           <a
             href="/docs/Algo-Trading-of-Sports-Exchanges.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-blue-400 hover:text-white text-sm font-medium"
+            className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md"
           >
-            <Download className="w-4 h-4 mr-1" /> Download PDF
+            Download PDF
+          </a>
+        </div>
+
+        {/* Company Presentation */}
+        <div className="bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <div className="flex items-center space-x-4">
+            <FileBarChart2 className="w-8 h-8 text-green-400" />
+            <div>
+              <h2 className="text-xl font-semibold">QST Company Presentation</h2>
+              <p className="text-gray-400 text-sm">PowerPoint file</p>
+            </div>
+          </div>
+          <a
+            href="/docs/qst-company-presentation.pptx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md"
+          >
+            Download PPTX
           </a>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
+
