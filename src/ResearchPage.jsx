@@ -97,6 +97,27 @@ export default function ResearchPage() {
                 Download PDF
               </a>
             </div>
+
+            {/* Chan & Ajomale Thesis */}
+            <div className="bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition">
+              <div className="flex items-center space-x-4">
+                <GraduationCap className="w-8 h-8 text-yellow-400" />
+                <div>
+                  <h3 className="text-lg font-semibold leading-snug">
+                    In-play tennis market making using transfer learning-based LSTM and enhanced Markov models
+                  </h3>
+                  <p className="text-gray-400 text-sm">UCL 4th Year Project, K. Chan and O. Ajomale</p>
+                </div>
+              </div>
+              <a
+                href="/docs/In%20Play%20Tennis%20Market%20Making%20Using%20Transfer%20Learning%20Based%20LSTM%20And%20Enhanced%20Markov%20Models%20Thesis%20K%20Chan%20And%20O%20Ajomale.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-md text-sm"
+              >
+                Download PDF
+              </a>
+            </div>
           </div>
         </div>
 
