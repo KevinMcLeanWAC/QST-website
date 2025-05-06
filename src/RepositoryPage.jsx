@@ -1,5 +1,6 @@
 import React from 'react';
 import { FileText, FileBarChart2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function RepositoryPage() {
   return (
@@ -7,21 +8,21 @@ export default function RepositoryPage() {
       {/* Header with aligned buttons and heading */}
       <div className="max-w-2xl mx-auto mb-8">
         <div className="flex justify-between items-center">
-          <a
-            href="/research#student-theses"
+          <Link
+            to="/research"
             className="bg-yellow-700 hover:bg-yellow-800 text-white px-4 py-2 rounded-md text-sm shadow"
           >
             Go to Student Theses
-          </a>
+          </Link>
 
           <h1 className="text-3xl font-bold text-center">Investor Info</h1>
 
-          <a
-            href="/research#academic-papers"
+          <Link
+            to="/research"
             className="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-md text-sm shadow"
           >
             Go to Academic Papers
-          </a>
+          </Link>
         </div>
       </div>
 
