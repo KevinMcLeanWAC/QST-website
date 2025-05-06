@@ -1,41 +1,40 @@
 import React from 'react';
 import { FileText, FileBarChart2 } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export default function RepositoryPage() {
   return (
     <div className="min-h-screen bg-gray-900 text-white px-6 py-16">
-      {/* Header with Navigation Buttons and Title */}
-      <div className="max-w-6xl mx-auto mb-12">
-        <div className="flex items-center justify-between mb-4">
-          <a
-            href="/research#academic-papers"
-            className="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-md text-sm shadow"
-          >
-            Go to Academic Papers
-          </a>
-
-          <h1 className="text-3xl font-bold text-center flex-grow text-white">
-            Investor Info
-          </h1>
-
+      {/* Header with aligned buttons and heading */}
+      <div className="max-w-2xl mx-auto mb-8">
+        <div className="flex justify-between items-center">
           <a
             href="/research#student-theses"
             className="bg-yellow-700 hover:bg-yellow-800 text-white px-4 py-2 rounded-md text-sm shadow"
           >
             Go to Student Theses
           </a>
+
+          <h1 className="text-3xl font-bold text-center">Investor Info</h1>
+
+          <a
+            href="/research#academic-papers"
+            className="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-md text-sm shadow"
+          >
+            Go to Academic Papers
+          </a>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto space-y-6">
+      <div className="max-w-2xl mx-auto space-y-6">
         {/* Investor Presentation */}
         <div className="bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
           <div className="flex items-center space-x-4">
             <FileBarChart2 className="w-8 h-8 text-green-400" />
             <div>
               <h2 className="text-xl font-semibold">Investor Presentation</h2>
-              <p className="text-gray-400 text-sm">Overview of strategy, structure, and performance.</p>
+              <p className="text-gray-400 text-sm">
+                Overview of strategy, structure, and performance.
+              </p>
             </div>
           </div>
           <a
@@ -54,7 +53,9 @@ export default function RepositoryPage() {
             <FileText className="w-8 h-8 text-blue-400" />
             <div>
               <h2 className="text-xl font-semibold">Algo-Trading of Sports Exchanges</h2>
-              <p className="text-gray-400 text-sm">Detailed research paper on algorithmic strategy.</p>
+              <p className="text-gray-400 text-sm">
+                Detailed research paper on algorithmic strategy.
+              </p>
             </div>
           </div>
           <a
@@ -70,6 +71,10 @@ export default function RepositoryPage() {
     </div>
   );
 }
+
+
+
+
 
 
 

@@ -77,21 +77,25 @@ export default function ResearchPage() {
       </div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div>
+        {/* === UCL Student Theses === */}
+        <div id="student-theses">
           <h2 className="text-2xl font-semibold mb-6 border-b border-gray-700 pb-2">
             UCL Student Theses
           </h2>
 
-          
-
           <div className="space-y-6">
             {filteredTheses.map((item, idx) => (
-              <div key={idx} className="bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition">
+              <div
+                key={idx}
+                className="bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition"
+              >
                 <div className="flex items-center space-x-4">
                   <GraduationCap className="w-8 h-8 text-yellow-400" />
                   <div>
                     <h3 className="text-lg font-semibold leading-snug">{item.title}</h3>
-                    <p className="text-gray-400 text-sm">{item.level}, {item.author}</p>
+                    <p className="text-gray-400 text-sm">
+                      {item.level}, {item.author}
+                    </p>
                   </div>
                 </div>
                 <a
@@ -108,12 +112,17 @@ export default function ResearchPage() {
         </div>
 
         {/* === Academic Papers === */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-6 border-b border-gray-700 pb-2">Academic Papers</h2>
+        <div id="academic-papers">
+          <h2 className="text-2xl font-semibold mb-6 border-b border-gray-700 pb-2">
+            Academic Papers
+          </h2>
 
           <div className="space-y-6">
             {filteredPapers.map((item, idx) => (
-              <div key={idx} className="bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition">
+              <div
+                key={idx}
+                className="bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition"
+              >
                 <div className="flex items-center space-x-4">
                   <FileText className="w-8 h-8 text-blue-400" />
                   <div>
@@ -137,10 +146,3 @@ export default function ResearchPage() {
     </div>
   );
 }
-
-
-
-
-
-
-
