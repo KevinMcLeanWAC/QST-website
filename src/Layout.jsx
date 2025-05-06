@@ -32,6 +32,7 @@ const Layout = () => {
           <Link to="/research" className="hover:text-blue-400">Research</Link>
           <Link to="/repository" className="hover:text-blue-400">Investor Info</Link>
           <Link to="/contact" className="hover:text-blue-400">Contact Us</Link>
+          <Link to="/weblog" className="hover:text-blue-400">WebLog</Link>
         </nav>
       </header>
 
@@ -43,6 +44,7 @@ const Layout = () => {
           <Link to="/research" className="block hover:text-blue-400" onClick={() => setIsMobileMenuOpen(false)}>Research</Link>
           <Link to="/repository" className="block hover:text-blue-400" onClick={() => setIsMobileMenuOpen(false)}>Investor Info</Link>
           <Link to="/contact" className="block hover:text-blue-400" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
+          <Link to="/weblog" className="block hover:text-blue-400" onClick={() => setIsMobileMenuOpen(false)}>WebLog</Link>
         </nav>
       )}
 
