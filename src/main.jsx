@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Layout from './Layout';
 import HomePage from './HomePage';
 import RepositoryPage from './RepositoryPage';
 import AboutPage from './AboutPage';
 import ContactPage from './ContactPage';
 import ResearchPage from './ResearchPage';
-import WebLogPage from './WebLogPage';
+import WeblogPage from './pages/WeblogPage';
+import WeblogDetail from './pages/WeblogDetail';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,7 +21,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="research" element={<ResearchPage />} />
           <Route path="repository" element={<RepositoryPage />} />
           <Route path="contact" element={<ContactPage />} />
-          <Route path="weblog" element={<WebLogPage />} />
+          <Route path="weblog" element={<WeblogPage />} />
+          <Route path="weblog/:slug" element={<WeblogDetail />} />
         </Route>
       </Routes>
     </Router>

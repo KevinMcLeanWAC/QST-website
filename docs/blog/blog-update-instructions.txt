@@ -1,0 +1,34 @@
+✅ Instructions for Adding a New Weblog Post in VitePress
+
+1. Go to:
+   docs/blog
+
+2. Create a new file such as:
+   2025-05-09-title-of-post.md
+
+3. Open the file:
+   docs/blog/index.md
+
+4. Add a link to the new post by inserting a line under the heading:
+
+   ## Posts
+
+5. Example line to add:
+
+   - 📄 [Title of Your Blog Post](/blog/2025-05-09-title-of-post)
+
+🟨 The text inside [ ... ] is the title people will see
+
+🟦 The text inside ( ... ) is the URL path to the post
+    ⚠️ Do NOT include ".md" in the link — VitePress handles that automatically
+
+---
+
+✅ Example:
+
+If you created a file named:
+  docs/blog/2025-05-06-replication.md
+
+You would link it like this:
+  - 📄 [Replicating a Back Bet with a Portfolio of Lays](/blog/2025-05-06-replication)
+
