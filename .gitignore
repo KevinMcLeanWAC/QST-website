@@ -1,0 +1,8 @@
+# Generated or build artefacts – never commit
+node_modules
+dist
+.vercel
+
+# VitePress caches / output
+docs/.vitepress/cache
+docs/.vitepress/dist
