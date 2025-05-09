@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
+// Read version injected by Vite define
+const version = import.meta.env.PACKAGE_VERSION;
+
 const Layout = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -16,6 +19,7 @@ const Layout = () => {
           <span className="text-xl font-bold text-white">Quant Sports Trading Ltd</span>
         </Link>
 
+        {/* Hamburger for mobile */}
         <button
           className="md:hidden text-white text-3xl"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -24,6 +28,7 @@ const Layout = () => {
           ☰
         </button>
 
+        {/* Desktop nav */}
         <nav className="hidden md:flex space-x-4">
           <Link to="/" className="hover:text-blue-400">Home</Link>
           <Link to="/about" className="hover:text-blue-400">About Us</Link>
@@ -34,6 +39,7 @@ const Layout = () => {
         </nav>
       </header>
 
+      {/* Mobile nav panel */}
       {isMobileMenuOpen && (
         <nav className="md:hidden bg-black px-6 py-4 space-y-2 shadow-md">
           <Link to="/" className="block hover:text-blue-400" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
@@ -58,11 +64,10 @@ const Layout = () => {
         <a href="/terms" className="hover:text-white transition-colors duration-200 px-2">
           Terms
         </a>
-        <div className="mt-2 text-xs text-gray-600">Version 3.3.2</div>
+        · v{version}
       </footer>
     </div>
   );
 };
 
 export default Layout;
-
