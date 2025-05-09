@@ -34,11 +34,16 @@ const theses = [
   },
 ];
 
-const papers = [
+const academicPapers = [
   {
     title: 'Algo-Trading of Sports Exchanges',
     description: 'Research paper on algorithmic trading strategy',
     href: '/docs/Algo-Trading-of-Sports-Exchanges.pdf',
+  },
+  {
+    title: 'Algorithmic Trading in Financial and Sports Exchanges',
+    description: 'Elliott (2024) — Statistical models applied across asset classes',
+    href: '/docs/Algorithmic%20Trading%20In%20Financial%20And%20Sports%20Exchanges.pdf',
   },
 ];
 
@@ -54,7 +59,7 @@ export default function ResearchPage() {
     );
   });
 
-  const filteredPapers = papers.filter((item) => {
+  const filteredAcademicPapers = academicPapers.filter((item) => {
     const q = query.toLowerCase();
     return (
       item.title.toLowerCase().includes(q) ||
@@ -118,7 +123,7 @@ export default function ResearchPage() {
           </h2>
 
           <div className="space-y-6">
-            {filteredPapers.map((item, idx) => (
+            {filteredAcademicPapers.map((item, idx) => (
               <div
                 key={idx}
                 className="bg-gray-800 p-5 rounded-xl shadow hover:shadow-lg transition"
