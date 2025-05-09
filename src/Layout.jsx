@@ -58,7 +58,7 @@ const Layout = () => {
         <a href="/terms" className="hover:text-white transition-colors duration-200 px-2">
           Terms
         </a>
-        <div className="mt-2 text-xs text-gray-600">Version 3.3.1</div>
+        <div className="mt-2 text-xs text-gray-600">Version 3.3.2</div>
       </footer>
     </div>
   );
